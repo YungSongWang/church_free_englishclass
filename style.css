@@ -1634,6 +1634,7 @@ li{
   position: relative;
   z-index: 3;
   padding-top: 100px;
+  margin-bottom: 140px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .contact-section {
@@ -1729,6 +1730,7 @@ li{
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
+  margin-bottom: 20px;
 }
 .contact-form-wrapper:hover {
   box-shadow: var(--shadow-4);
