@@ -212,6 +212,7 @@ li{
   border-radius: 4px;
   border: 1px solid transparent;
 }
+
 .btn:hover {
   color: inherit;
 }
@@ -223,6 +224,7 @@ li{
   font-size: 1.15em;
   padding: 16px 24px;
 }
+
 .btn.btn-sm {
   padding: 8px 16px;
 }
@@ -267,11 +269,13 @@ li{
   color: var(--white);
   box-shadow: var(--shadow-2);
 }
+
 .active.primary-btn, .primary-btn:hover, .primary-btn:focus {
   background: var(--primary-dark);
   color: var(--white);
   box-shadow: var(--shadow-4);
 }
+
 .deactive.primary-btn {
   background: var(--gray-4);
   color: var(--dark-3);
@@ -283,7 +287,7 @@ li{
   color: var(--primary);
 }
 .active.primary-btn-outline, .primary-btn-outline:hover, .primary-btn-outline:focus {
-  background: var(--primary-dark);
+  background: var(--primary);
   color: var(--white);
 }
 .deactive.primary-btn-outline {
@@ -358,6 +362,17 @@ li{
   border: 2px solid var(--primary);
   border-radius: 30px;
   padding: 8px 30px;
+}
+.container h6 {
+  margin-bottom: 20px;
+    font-weight: 600;
+      display: inline-block;
+      margin-bottom: 15px;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+      border-radius: 30px;
+      padding: 8px 30px;
+    
 }
 .section-title-five h2 {
   margin-bottom: 15px;
@@ -899,11 +914,19 @@ li{
   background: var(--primary);
   color: var(--white);
   box-shadow: var(--shadow-2);
+  
 }
 .header-eight .active.primary-btn, .header-eight .primary-btn:hover, .header-eight .primary-btn:focus {
-  background: var(--primary-dark);
+  background: var(--primary);
   color: var(--white);
   box-shadow: var(--shadow-4);
+  transition: background 0.3s ease-in-out;
+}
+.header-eight .video-button .icon-btn {
+    background: var(--primary);
+      color: var(--white);
+      box-shadow: var(--shadow-4);
+      transition: background 0.3s ease-in-out;
 }
 .header-eight .deactive.primary-btn {
   background: var(--gray-4);
@@ -1176,7 +1199,9 @@ li{
 }
 .services-eight .single-services {
   padding: 40px 30px;
+  padding-bottom: 10px;
   border: 1px solid var(--light-1);
+  height:350px ;
   border-radius: 10px;
   margin-bottom: 30px;
   -webkit-transition: all 0.3s ease-out 0s;
@@ -1184,6 +1209,7 @@ li{
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
+
 }
 .services-eight .single-services:hover {
   box-shadow: var(--shadow-4);
