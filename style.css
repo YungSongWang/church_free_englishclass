@@ -362,16 +362,27 @@ li{
   border: 2px solid var(--primary);
   border-radius: 30px;
   padding: 8px 30px;
+
+  
 }
+
+/* .container {
+  display: flex;
+} */
+
+
+
 .container h6 {
   margin-bottom: 20px;
     font-weight: 600;
       display: inline-block;
-      margin-bottom: 15px;
+   
       color: var(--primary);
       border: 2px solid var(--primary);
       border-radius: 30px;
       padding: 8px 30px;
+      text-align: center;
+      justify-content: center;
     
 }
 .section-title-five h2 {
@@ -1660,7 +1671,7 @@ li{
   position: relative;
   z-index: 3;
   padding-top: 100px;
-  margin-bottom: 140px;
+  margin-bottom: 80px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .contact-section {
@@ -1855,7 +1866,10 @@ li{
 }
 .footer-eleven .f-about p {
   color: var(--dark-3);
-  margin-top: 20px;
+  margin-top: 0px;
+}
+.footer-top .f-about .logo img {
+  margin-top: -10px;
 }
 .footer-eleven .f-about .copyright-text {
   color: var(--dark-3);
