@@ -27,6 +27,10 @@
   <link rel="stylesheet" href="assets/css/glightbox.min.css" />
 
   <link rel="stylesheet" href="style.css" />
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
 </head>
 
 <body>
@@ -145,18 +149,18 @@
               <br>
               We welcome individuals of all beliefs and backgrounds to participate in our free English classes.
             </p>
-            <div class="button">
-              <a href="#about-area-five" class="btn primary-btn">Enroll Now</a>
-              <a href="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FComeUntoJesusChristInAdelaide%2Fvideos%2F1729626754438104%2F&show_text=false&width=560&t=0"
-                class="glightbox video-button">
+<div class="button">
+  <a href="#about-area-five" class="btn primary-btn">Enroll Now</a>
+  <a href="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fcomeuntojesuschristadelaide%2Fvideos%2F358530926847140%2F&show_text=false&width=560&t=0"
+    class="glightbox video-button"
 
-
-                <span class="btn icon-btn rounded-full">
-                  <i class="lni lni-play"></i>
-                </span>
-                <span class="text">Watch Class Preview</span>
-              </a>
-            </div>
+     >
+    <span class="btn icon-btn rounded-full">
+      <i class="lni lni-play"></i>
+    </span>
+    <span class="text">Watch Class Preview</span>
+  </a>
+</div>
           </div>
         </div>
         <div class="col-lg-6 col-md-12 col-12">
@@ -610,7 +614,7 @@
                   <div class="contact-content">
                     <h4>Contact</h4>
                     <p>0424-817-915</p>
-                    <p>？？@gmail.com</p>
+                    <p>man.hu@missionary.org</p>
                   </div>
                 </div>
               </div>
@@ -837,7 +841,7 @@
   <script src="assets/js/glightbox.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/tiny-slider.js"></script>
-
+  
   <script>
 
     //===== close navbar-collapse when a  clicked
@@ -871,15 +875,23 @@
     });
 
     //========= glightbox
-    GLightbox({
-      'href': 'https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM',
-      'type': 'video',
-      'source': 'youtube', //vimeo, youtube or local
-      'width': 900,
-      'autoplayVideos': true,
-    });
 
   </script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
+    <script>
 
+      const lightbox = GLightbox({
+        touchNavigation: true,
+        loop: false,
+        autoplayVideos: false
+      });
+    </script>
+</body>
+<script>
+  lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true,
+    'alwaysShowNavOnTouchDevices': true
+  });
+</script>
 </html>
